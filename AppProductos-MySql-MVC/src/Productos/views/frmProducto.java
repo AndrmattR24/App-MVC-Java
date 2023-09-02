@@ -45,10 +45,11 @@ public class frmProducto extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        bg.setBackground(new java.awt.Color(153, 153, 255));
+        bg.setBackground(new java.awt.Color(0, 153, 204));
 
         lblTitulo.setBackground(new java.awt.Color(0, 153, 153));
-        lblTitulo.setFont(new java.awt.Font("Lucida Handwriting", 1, 24)); // NOI18N
+        lblTitulo.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(51, 204, 255));
         lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitulo.setText("GESTION PRODUCTOS");
 
@@ -58,16 +59,18 @@ public class frmProducto extends javax.swing.JFrame {
         btnBuscar.setText("Buscar");
 
         lblCodigo.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
+        lblCodigo.setForeground(new java.awt.Color(0, 204, 255));
         lblCodigo.setText("Codigo      :");
 
-        txtCodigo.setBackground(new java.awt.Color(255, 204, 255));
+        txtCodigo.setBackground(new java.awt.Color(0, 255, 204));
         txtCodigo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtCodigo.setBorder(null);
 
         lblNombre.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
+        lblNombre.setForeground(new java.awt.Color(0, 204, 255));
         lblNombre.setText("Nombre    :");
 
-        txtNombre.setBackground(new java.awt.Color(255, 204, 255));
+        txtNombre.setBackground(new java.awt.Color(0, 255, 204));
         txtNombre.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtNombre.setBorder(null);
         txtNombre.addActionListener(new java.awt.event.ActionListener() {
@@ -77,9 +80,10 @@ public class frmProducto extends javax.swing.JFrame {
         });
 
         lblPrecio.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
+        lblPrecio.setForeground(new java.awt.Color(0, 204, 255));
         lblPrecio.setText("Precio        :");
 
-        txtPrecio.setBackground(new java.awt.Color(255, 204, 255));
+        txtPrecio.setBackground(new java.awt.Color(0, 255, 204));
         txtPrecio.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtPrecio.setBorder(null);
         txtPrecio.addActionListener(new java.awt.event.ActionListener() {
@@ -89,9 +93,10 @@ public class frmProducto extends javax.swing.JFrame {
         });
 
         lblCantidad.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
+        lblCantidad.setForeground(new java.awt.Color(0, 204, 255));
         lblCantidad.setText("Cantidad   :");
 
-        txtCantidad.setBackground(new java.awt.Color(255, 204, 255));
+        txtCantidad.setBackground(new java.awt.Color(0, 255, 204));
         txtCantidad.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtCantidad.setBorder(null);
         txtCantidad.addActionListener(new java.awt.event.ActionListener() {
@@ -126,7 +131,7 @@ public class frmProducto extends javax.swing.JFrame {
         });
 
         txtId.setEditable(false);
-        txtId.setBackground(new java.awt.Color(153, 153, 255));
+        txtId.setBackground(new java.awt.Color(0, 153, 204));
         txtId.setForeground(new java.awt.Color(153, 153, 255));
         txtId.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtId.setBorder(null);
@@ -137,53 +142,44 @@ public class frmProducto extends javax.swing.JFrame {
         bgLayout.setHorizontalGroup(
             bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bgLayout.createSequentialGroup()
-                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblTitulo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, bgLayout.createSequentialGroup()
-                        .addGap(17, 17, 17)
+                .addGap(17, 17, 17)
+                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(bgLayout.createSequentialGroup()
+                        .addComponent(btnGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
+                        .addGap(12, 12, 12)
+                        .addComponent(btnEditar, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+                        .addGap(12, 12, 12)
+                        .addComponent(btnEliminar, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+                        .addGap(12, 12, 12)
+                        .addComponent(btnLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
+                        .addGap(20, 20, 20))
+                    .addGroup(bgLayout.createSequentialGroup()
                         .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(bgLayout.createSequentialGroup()
-                                .addComponent(btnGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
-                                .addGap(12, 12, 12)
-                                .addComponent(btnEditar, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                                .addGap(12, 12, 12)
-                                .addComponent(btnEliminar, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                                .addGap(12, 12, 12)
-                                .addComponent(btnLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
-                                .addGap(3, 3, 3))
-                            .addGroup(bgLayout.createSequentialGroup()
-                                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(bgLayout.createSequentialGroup()
-                                        .addComponent(lblCodigo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGap(1, 1, 1))
-                                    .addGroup(bgLayout.createSequentialGroup()
-                                        .addComponent(lblNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGap(2, 2, 2))
-                                    .addComponent(lblPrecio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(lblCantidad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(25, 25, 25)
-                                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtCantidad, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
-                                    .addComponent(txtPrecio, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
-                                    .addComponent(txtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
-                                    .addComponent(txtCodigo, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                                    .addComponent(txtId))
-                                .addGap(2, 2, 2)))))
-                .addGap(17, 17, 17))
+                            .addComponent(lblPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(25, 25, 25)
+                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtCantidad, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
+                            .addComponent(txtPrecio, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
+                            .addComponent(txtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
+                            .addComponent(txtCodigo, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
+                            .addComponent(txtId))
+                        .addGap(19, 19, 19))))
+            .addComponent(lblTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         bgLayout.setVerticalGroup(
             bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bgLayout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 26, Short.MAX_VALUE)
-                .addGap(17, 17, 17)
-                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bgLayout.createSequentialGroup()
                         .addGap(3, 3, 3)
-                        .addComponent(lblCodigo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(lblCodigo, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
                     .addGroup(bgLayout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addComponent(txtCodigo))
@@ -191,39 +187,37 @@ public class frmProducto extends javax.swing.JFrame {
                         .addGap(2, 2, 2)
                         .addComponent(btnBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(17, 17, 17)
-                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bgLayout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(lblNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(lblNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
                     .addGroup(bgLayout.createSequentialGroup()
                         .addGap(4, 4, 4)
                         .addComponent(txtNombre))
-                    .addGroup(bgLayout.createSequentialGroup()
-                        .addGap(0, 0, 0)
-                        .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(19, 19, 19)
-                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bgLayout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(lblPrecio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(lblPrecio, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE))
                     .addGroup(bgLayout.createSequentialGroup()
                         .addGap(4, 4, 4)
                         .addComponent(txtPrecio)))
                 .addGap(19, 19, 19)
-                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bgLayout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(lblCantidad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(lblCantidad, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE))
                     .addGroup(bgLayout.createSequentialGroup()
                         .addGap(4, 4, 4)
                         .addComponent(txtCantidad)))
-                .addGap(17, 17, 17)
+                .addGap(30, 30, 30)
                 .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnEditar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnEliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(12, 12, 12))
+                .addGap(30, 30, 30))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
