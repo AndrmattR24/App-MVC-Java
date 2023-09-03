@@ -57,7 +57,7 @@ public class ProductosController implements ActionListener{
                     limpiar();
                 }
                 else{
-                    JOptionPane.showMessageDialog(viewProducto, "Error al Guardar Producto", "Error:", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(viewProducto, "Error al Guardar el producto", "Error:", JOptionPane.ERROR_MESSAGE);
                 }      
             }
         }
@@ -120,6 +120,7 @@ public class ProductosController implements ActionListener{
                 }
                 else{
                     JOptionPane.showMessageDialog(viewProducto, "Producto No existe", "Aviso:", JOptionPane.INFORMATION_MESSAGE);
+                    limpiar();
                 }   
             }
         }

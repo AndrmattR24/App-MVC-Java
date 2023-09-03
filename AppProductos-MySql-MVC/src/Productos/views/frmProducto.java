@@ -132,7 +132,7 @@ public class frmProducto extends javax.swing.JFrame {
 
         txtId.setEditable(false);
         txtId.setBackground(new java.awt.Color(0, 153, 204));
-        txtId.setForeground(new java.awt.Color(153, 153, 255));
+        txtId.setForeground(new java.awt.Color(0, 153, 204));
         txtId.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtId.setBorder(null);
         txtId.setOpaque(true);
